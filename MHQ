@@ -1,0 +1,27 @@
+public class missionFive {
+    
+    public static void DingDong(){
+        
+        List<Integer> input = new List<Integer>{12,20,30,17};  //Declares a List called “input”, which will be used to hold 4 numbers
+            
+            for(Integer i :input){
+                String output =  'Ding'; 
+                String output1 = 'Dong';
+                
+                if (math.mod(i,3) == 0 && math.mod(i,5) ==0){   //If “input” is multiples of both 3 and 5, display “DingDong”
+                    system.debug(output+output1);
+                }
+            	else if (math.mod(i,3) == 0) {                  //if “input” is multiples of 3, output is Ding
+                    system.debug(output);
+                }
+                else if (math.mod(i,5) == 0){                   //if “input” is multiples of 5, output is Dong
+                    system.debug(output1);
+                }
+                
+                else
+                   system.debug(i);                               //For input that are neither multiples of 3 or 5, returns the input number
+                    
+                }
+         }
+    }
+   
